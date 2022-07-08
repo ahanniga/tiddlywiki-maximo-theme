@@ -1,0 +1,13 @@
+{
+  "name": "tiddlywiki-maximo-theme",
+  "version": "0.2.0","description": "Maximo: A theme to maximise tiddler space","license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahanniga/tiddlywiki-maximo-theme"
+  },
+  "scripts": {
+    "build": "make"
+  },"author": "A Hannigan <github@hannigan.uk.com>","devDependencies": {
+    "tiddlywiki": "^5.1.23"
+  }
+}
