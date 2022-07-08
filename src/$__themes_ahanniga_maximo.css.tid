@@ -160,7 +160,7 @@ img.kbtitle {
 
 /* Style search input */
 textarea, input[type=text], input[type=search], input[type=""], input:not([type]) {
-    border: 1px solid <colour tiddler-border>> !important;
+    border: 1px solid <<colour tiddler-border>> !important;
     border-radius: 3px !important;
     padding: 5px !important;
     outline: none !important;
@@ -211,8 +211,8 @@ html button {
     line-height: 1.2;
     color: <<colour primary>>;
     fill: <<colour primary>>;
-    background-color: <colour background>>;
-    border: 1px solid <<colour tiddler-border>>;
+    background-color: <<colour background>>;
+    border: 1px solid <<colour tiddler-editor-border>>;
     padding: 4px 13px;
     border-radius: 7px;
     cursor: pointer;
@@ -229,7 +229,7 @@ html button {
 
 .tc-editor-toolbar button {
     background-color: <<colour background>> !important;
-    border: 1px solid <<colour tiddler-border>>;
+    border: 1px solid <<colour tiddler-editor-border>>;
     padding: 4px !important;
 }
 .tc-editor-toolbar button:hover {
