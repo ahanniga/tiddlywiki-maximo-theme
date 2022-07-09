@@ -85,13 +85,6 @@ input[type="search"] {
   outline-offset: initial;
 }
 
-html button {
-	line-height: 1.2;
-	color: <<colour button-foreground>>;
-	fill: <<colour button-foreground>>;
-	background: <<colour button-background>>;
-	border-color: <<colour button-border>>;
-}
 
 /*
 ** Basic element styles
@@ -558,8 +551,8 @@ html body.tc-body .tc-btn-rounded:hover svg {
 }
 
 .tc-btn-text {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin-left: 5px;
 }
 
 /* used for documentation "fake" buttons */
@@ -694,9 +687,6 @@ button svg.tc-image-button, button .tc-image-button img {
 	margin-right: 7px;
 }
 
-.tc-tags-wrapper {
-	margin: 4px 0 14px 0;
-}
 
 .tc-missing-tiddler-label {
 	font-style: italic;
@@ -723,10 +713,6 @@ button.tc-tag-label, span.tc-tag-label {
 	vertical-align: baseline;
 	background-color: <<colour tag-background>>;
 	border-radius: 1em;
-}
-
-.tc-sidebar-scrollable .tc-tag-label {
-	text-shadow: none;
 }
 
 .tc-untagged-separator {
@@ -1233,6 +1219,7 @@ canvas.tc-edit-bitmapeditor  {
 .tc-tiddler-frame .tc-tiddler-body {
 	font-size: {{$:/themes/tiddlywiki/maximo/metrics/bodyfontsize}};
 	line-height: {{$:/themes/tiddlywiki/maximo/metrics/bodylineheight}};
+	padding-top: 5px;
 }
 
 .tc-titlebar, .tc-tiddler-edit-title {
@@ -1284,11 +1271,6 @@ html body.tc-body.tc-single-tiddler-window {
 	background-color: <<colour primary>>;
 }
 
-.tc-editor-toolbar button svg {
-	width: 1.6em;
-	height: 1.2em;
-}
-
 .tc-editor-toolbar button:hover {
 	background-color: <<colour tiddler-controls-foreground-selected>>;
 	fill: <<colour background>>;
@@ -1323,7 +1305,7 @@ html body.tc-body.tc-single-tiddler-window {
 		width: auto;
 		left: 0;
 		margin-left: {{$:/themes/tiddlywiki/maximo/metrics/storyleft}};
-		margin-right: {{$:/themes/tiddlywiki/maximo/metrics/sidebarwidth}};
+		margin-right: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
 	}
 
 	.tc-tiddler-frame {
@@ -1334,7 +1316,7 @@ html body.tc-body.tc-single-tiddler-window {
 		left: auto;
 		bottom: 0;
 		right: 0;
-		width: {{$:/themes/tiddlywiki/maximo/metrics/sidebarwidth}};
+		width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth}};
 	}
 
 	body.tc-body .tc-storyview-zoomin-tiddler {
@@ -2972,4 +2954,20 @@ select {
 
 .tc-word-break {
 	word-break: break-all;
+}
+
+.tc-editor-toolbar button svg {
+	color: <<colour muted-foreground>>;
+	fill: <<colour muted-foreground>>;
+	width: 1.6em;
+	height: 1.2em;
+}
+
+
+/* CodeMirror */
+.cm-s-tiddlywiki .CodeMirror.cm-s-tiddlywiki.CodeMirror-wrap {
+    border: 1px solid <<colour tiddler-editor-border>>;
+}
+.cm-s-tiddlywiki .CodeMirror-scroll {
+    min-height: 120px;
 }

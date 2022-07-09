@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Shape tag pills */
 button.tc-tag-label, span.tc-tag-label {
-    padding: 3px 11px !important;
+    padding: 0 11px !important;
     /*color: #c8e1ff !important;*/
     line-height: inherit;
 }
@@ -47,11 +47,7 @@ input.tc-titlebar.tc-edit-texteditor {
     line-height: 1;
 }
 .tc-subtitle {
-    padding: 0 9px 3px 3px !important;
-}
-
-.tc-tiddler-body {
-    margin-top: 63px;
+    padding: 5px;
 }
 
 /* Edit tiddler */
@@ -76,11 +72,10 @@ span.tc-tiddler-controls.tc-titlebar {
 
 .tc-tags-wrapper {
     padding: 0px 0px 0px 15px !important;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
-    top: 75px;
-    margin: 0 0 0px 0 !important;
+    margin: 0 -15px !important;
     border-top: 1px solid <<colour tiddler-border>> !important;
     border-bottom: 1px solid <<colour tiddler-border>> !important;
 }
@@ -160,7 +155,7 @@ img.kbtitle {
 
 /* Style search input */
 textarea, input[type=text], input[type=search], input[type=""], input:not([type]) {
-    border: 1px solid <<colour tiddler-border>> !important;
+    border: 1px solid <<colour tiddler-editor-border>> !important;
     border-radius: 3px !important;
     padding: 5px !important;
     outline: none !important;
@@ -194,7 +189,9 @@ body.tc-body .tc-sidebar-scrollable {
     padding-top: 41px;
     padding-left: 35px;
 }
-
+.tc-sidebar-scrollable .tc-tag-label {
+	text-shadow: none;
+}
 .tc-edit-tags {
     background: <<colour background>>;
     border: none;
@@ -202,21 +199,25 @@ body.tc-body .tc-sidebar-scrollable {
     margin-top: 8px !important;
 }
 
-::placeholder {
+/* ::placeholder {
   color: #636e7b;
-  opacity: 1; /* Firefox */
+} */
+
+input.tc-edit-texteditor::placeholder {
+    font-style: italic;
+    color: #5f6976;
 }
 
 html button {
     line-height: 1.2;
-    color: <<colour primary>>;
-    fill: <<colour primary>>;
-    background-color: <<colour background>>;
-    border: 1px solid <<colour tiddler-editor-border>>;
     padding: 4px 13px;
     border-radius: 7px;
     cursor: pointer;
+	border: 1px solid <<colour tiddler-editor-border>>;
+    background: <<colour tiddler-background>>;
+    color: <<colour muted-foreground>>;
 }
+
 
 .tc-control-panel div {
     border:none;
@@ -265,10 +266,6 @@ hr {
     height: 0;
     border: 0;
     border-top: 1px solid <<colour tiddler-border>> !important;
-}
-
-.cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
-    font-size: 10pt;
 }
 
 table {
@@ -382,24 +379,4 @@ details {
     border-radius: 6px;
 }
 
-/* CodeMirror */
-.cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
-    font-size: 10pt !important;
-}
 
-.cm-s-tiddlywiki .CodeMirror-activeline-background, .cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
-    background: <<colour background>> !important;
-}
-.cm-s-tiddlywiki .CodeMirror-linenumber {
-    color: <<colour modal-footer-foreground>> !important;
-}
-.cm-s-tiddlywiki .CodeMirror-dialog {
-    background: <<colour background>> !important;
-}
-span.CodeMirror-search-hint {
-    color: <<colour foreground>> !important;
-}
-.CodeMirror-dialog-top {
-    border-bottom: 1px solid <<colour tiddler-border>> !important;
-    top: 0;
-}
