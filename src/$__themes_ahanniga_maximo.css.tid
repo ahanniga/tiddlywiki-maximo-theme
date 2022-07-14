@@ -21,13 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500 !important;
 }
 
-/* Shape tag pills */
-button.tc-tag-label, span.tc-tag-label {
-    padding: 0 11px !important;
-    /*color: #c8e1ff !important;*/
-    line-height: inherit;
-}
-
 /* For title border we need to switch padding/margins */
 .tc-titlebar {
     margin: 0 !important;
@@ -187,7 +180,7 @@ code {
 /* Move the right panel up a bit */
 body.tc-body .tc-sidebar-scrollable {
     padding-top: 41px;
-    padding-left: 35px;
+    padding-left: 26px;
 }
 .tc-sidebar-scrollable .tc-tag-label {
 	text-shadow: none;
@@ -370,13 +363,6 @@ details {
     border-radius: 8px;
 }
 
-/* Notification */
-.tc-notification {
-    padding: 0px 10px 9px 14px;
-    background-color: <<colour notification-background>>;
-    border: 1px solid <<colour notification-border>>;
-    color: <<colour primary>>;
-    border-radius: 6px;
+body.tc-body .tc-sidebar-scrollable {
+    background-color: <<colour sidebar-tab-background>>;
 }
-
-
