@@ -362,7 +362,6 @@ details {
     padding: 10px;
     border-radius: 8px;
 }
-
 body.tc-body .tc-sidebar-scrollable {
-    background-color: <<colour sidebar-tab-background>>;
+    background-color: <<colour sidebar-background>>;
 }
