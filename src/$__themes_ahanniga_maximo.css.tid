@@ -365,3 +365,8 @@ details {
 body.tc-body .tc-sidebar-scrollable {
     background-color: <<colour sidebar-background>>;
 }
+
+.tc-sidebar-lists button {
+    color: color: <<colour muted-foreground>> !important;
+    fill: color: <<colour muted-foreground>> !important;
+}

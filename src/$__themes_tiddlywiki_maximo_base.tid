@@ -595,11 +595,6 @@ html body.tc-body .tc-btn-rounded:hover svg {
 	color: <<colour foreground>>;
 }
 
-.tc-sidebar-lists button {
-	color: <<colour sidebar-button-foreground>>;
-	fill: <<colour sidebar-button-foreground>>;
-}
-
 .tc-sidebar-lists button.tc-btn-mini {
 	color: <<colour sidebar-muted-foreground>>;
 }
