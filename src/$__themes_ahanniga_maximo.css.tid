@@ -332,6 +332,11 @@ thead > tr > th {
     border: none;
 }
 
+/* Make most of available width */
+.td-pres .tamasha-slide-content {
+    max-width: 90% !important;
+}
+
 /* Streams Plugin */
 .stream-root {
     margin-left: -9px !important;
@@ -370,3 +375,9 @@ body.tc-body .tc-sidebar-scrollable {
     color: color: <<colour muted-foreground>> !important;
     fill: color: <<colour muted-foreground>> !important;
 }
+
+span.tc-tiddler-title-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+}
+
