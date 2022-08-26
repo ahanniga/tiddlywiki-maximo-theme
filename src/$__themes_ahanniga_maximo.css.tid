@@ -97,8 +97,13 @@ label {
     font-weight: normal;
     text-decoration: none !important;
 }
+.tc-sidebar-header .tc-sidebar-lists p {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
 .tc-sidebar-lists a.tc-tiddlylink:hover {
     color: <<colour sidebar-tiddler-link-foreground>>;
+    color: <<colour sidebar-tiddler-link-foreground-hover>>;
     font-weight: normal;
 }
 a.tc-tiddlylink-external {
@@ -380,4 +385,68 @@ span.tc-tiddler-title-icon svg {
     width: 22px !important;
     height: 22px !important;
 }
+
+.alert-danger, .alert-warning, .alert-success, .alert-secondary, .alert-primary, .alert-info, .alert-light, .alert-dark {
+    color: #acbac7;
+}
+
+.alert-primary {
+    color: #acbac7;
+    background-color: #2d333b;
+    border-color: #4f5968;
+}
+
+.sticky-footer {
+    background-color: #2b323c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card {
+    background-color: transparent;
+    border: 1px solid rgb(68 76 86);
+}
+.card-header {
+    background-color: rgb(46 51 59);
+    border-bottom: 1px solid rgb(68 76 86);
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+.card-footer {
+    background-color: #2e333b;
+    border-top: 1px solid rgb(68 76 86);
+}
+
+.tc-notification {
+    position: fixed;
+    top: 14px;
+    right: 42px;
+    z-index: 1300;
+    max-width: 280px;
+    padding: 0px 14px 8px 14px;
+    background-color: transparent;
+    border: 1px solid #72d876;
+}
+
+svg.tc-image-button {
+    padding: none;
+}
+
+span.tc-tiddler-title-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+}
+.tc-story-river {
+	padding: 42px 15px 42px 15px !important;
+}
+.tc-tiddler-frame {
+  margin-bottom: 17px;
+}
+
+summary a.tc-tiddlylink.tc-tiddlylink-resolves {
+    margin-left: 5px;
+}
+
 
