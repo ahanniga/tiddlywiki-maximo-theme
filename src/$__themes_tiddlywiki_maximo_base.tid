@@ -823,6 +823,11 @@ button.tc-btn-invisible.tc-remove-tag-button {
 	width: 60%;
 }
 
+.tc-search {
+    display: flex;
+    align-items: center;
+}
+
 .tc-search a svg {
 	width: 1.2em;
 	height: 1.2em;
